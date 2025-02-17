@@ -52,6 +52,6 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: ${{ env.KEYCLOAK_VERSION }}
+          build-args: KCVERSION=${{ env.KEYCLOAK_VERSION }}
           platforms: linux/amd64,linux/arm64
 
